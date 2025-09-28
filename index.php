@@ -22,8 +22,28 @@
     // Array type
     $names =["Faith", "Asha", "Frida"];
 
-    // Oject types
+    // Object types
 
+    // ============ BUILT-IN SUPERGLOBAL VARIABLES =======
+    echo $_SERVER["DOCUMENT_ROOT"];
+    echo "<br>";
+    echo $_SERVER["PHP_SELF"];
+    echo "<br>";
+    echo $_SERVER["SERVER_NAME"];
+    echo "<br>";
+    echo $_SERVER["REQUEST_METHOD"];
+    echo "<br>";
+    $_GET[""];
+    echo "<br>";
+    $_REQUEST[""];
+    echo "<br>";
+    $_FILES[];
+    echo "<br>";
+    $_COOKIE[];
+    echo "<br>";
+    $_SESSION[];
+    echo "<br>";
+    $_ENV[];
     ?>
 
     <p>Hi! My name is <?php echo $string; ?>, and I am a teacher</p>
