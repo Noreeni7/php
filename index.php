@@ -37,17 +37,38 @@
     echo "<br>";
     $_REQUEST[""];
     echo "<br>";
-    $_FILES[];
+    $_FILES[""];
     echo "<br>";
-    $_COOKIE[];
+    $_COOKIE[""];
     echo "<br>";
-    $_SESSION[];
+    $_SESSION[""];
     echo "<br>";
-    $_ENV[];
+    $_ENV[""];
     ?>
 
     <p>Hi! My name is <?php echo $string; ?>, and I am a teacher</p>
 
+
+    <main>
+        <form action="includes/formhandler.php" method="post">
+            <label for="firstName">Firstname?</label>
+            <input id="firstName" type="text" name="firstname" placeholder="First Name...">
+
+            <label for="secondName">Secondname?</label>
+            <input id="secondName" type="text" name="secondname" placeholder="Second Name...">
+
+            <label for="favouritepet">Favourite pet?</label>
+            <select name="favouritepet" id="favouritepet">
+                <option value="none">None</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </main>
     
 
 
