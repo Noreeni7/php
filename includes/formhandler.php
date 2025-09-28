@@ -10,6 +10,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $second = htmlspecialchars($_POST["secondname"]);
     $pet = htmlspecialchars($_POST["favouritepet"]);
 
+    // check if firstname is empty
+    if(empty($first)){
+        // redirect back with an error
+        header("Location: ../index.php?error=firstname _required");
+        exit;
+    }
+
     // Display submitted data back to the user
     echo "This is the data that the user subitted:";
     echo "<br>";
