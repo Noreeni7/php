@@ -70,8 +70,85 @@
 
     </main>
     
+<?php
+    // ===================== Operators ======================
+    // String operators
+    $a = "Hello";
+    $b = "World";
+    $c = $a . " " . $b;
+    echo $c;
+
+    echo "<br>";
+
+    // Arithmetic operators
+    echo 1 / 2;
+    echo "<br>";
+    echo 10 % 3;
+    echo "<br>";
+    echo 10 ** 3;
+    echo "<br>";
+
+    // Assignment operators
+    $z = 2;
+    $z += 3;
+    echo $z;
+    echo "<br>";
+
+    $d =2;
+    $d *=2;
+    echo $d;
+
+    // Comparison operator
+    $a = 5;
+    $b = 4;
+
+    if($a == $b){
+        echo "This is true";
+    }
+
+    echo "<br>";
+
+    if($a === $b){
+        echo "This is true";
+    };
+
+    if($a != $b){
+        echo "This is true";
+    };
+
+    echo "<br>";
+
+    if($a <> $b){
+        echo "This is true";
+    };
+
+    echo "<br>";
+
+    if($a > $b){
+        echo "This is true";
+    };
 
 
+    // Logical operators
+    $a = 4;
+    $b = 3;
+
+    $c = 6;
+    $d = 7;
+
+    if($a === $b || $c === $d && $c === $a){
+        echo "true";
+    };
+    echo "<br>";
+
+    // Increamenting/decreamenting operators
+    $a = 1;
+    echo ++$a;
+    echo "<br>";
+
+    $b = 1;
+    echo --$b;
+?>
 
 
 
