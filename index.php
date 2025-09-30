@@ -31,6 +31,10 @@
     echo "<br>";
     array_push($names, "Dan");
     print_r($names);
+    array_pop($names);
+    echo "<br>";
+    print_r(array_reverse($names));
+    echo "<br>";
 
 
     $tasks = [
@@ -222,6 +226,25 @@
     } else {
         echo "None of the conditions are true";
     }
+
+    echo "<br>";
+
+
+    // Scope
+    // Global scope - Variables declared outside of functions. Can’t be accessed inside functions directly (unless you use global keyword).
+    // Local scope - Variables declared inside a function. Only exist and are usable inside that function.
+
+    // Static scope - Special case: variables inside a function that keep their value between calls
+    function counter(){
+        static $num = 0;
+        $num++;
+        return $num;
+    }
+    echo counter();
+    echo "<br>";
+    echo counter();
+    echo "<br>";
+    echo counter();
 ?>
 
 
