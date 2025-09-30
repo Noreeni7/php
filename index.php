@@ -151,10 +151,32 @@
 
     echo "<br>";
 
+    // switch
+    $a = 3;
+    
+    switch ($a) {
+        case 2;
+            echo "This first condition is true";
+            break;
+        case 3;
+            echo "This second condition is true";
+            break;
+        case 1;
+            echo "This last condition is true";
+            break;
+        default;
+            echo "None of the conditions are true";
+            break;
+    }
+
+    echo "<br>";
+
     // Using else if
     $bool = true;
     $a = 1;
     $b = 4;
+
+
 
     if( $a < $b && !$bool ){
         echo "First condition is true";
