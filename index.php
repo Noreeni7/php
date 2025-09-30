@@ -251,6 +251,37 @@
     define("PI", 3.14);
     define("NAME", "Dan");
 
+    // ================================= LOOPS ================================
+    // for loop
+    for ($i=0; $i <= 10; $i++) {
+        echo "This is iteration number " . $i . "<br>";
+    }
+
+    // while loop
+    $i = 4;
+    while ($i<11) {
+        echo "$i";
+        $i++;
+    }
+
+    echo "<br>";
+
+    // do..while loop
+    $i=4;
+    do {
+        echo $i;
+        $i++;
+    } while ($i<4);
+
+    echo "<br>";
+
+    // foreach
+    $fruits = ["Apple" => "Green", "Banana" => "Yellow", "Orange" => "Orange"];
+
+    foreach ($fruits as $fruit => $colour) {
+        echo "This is a " . $fruit . ", which has a colour of " . "$colour" . "<br>";
+    }
+
 ?>
 
 
