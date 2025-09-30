@@ -230,9 +230,10 @@
     echo "<br>";
 
 
-    // Scope
+    // ================================= SCOPE ================================
     // Global scope - Variables declared outside of functions. Can’t be accessed inside functions directly (unless you use global keyword).
     // Local scope - Variables declared inside a function. Only exist and are usable inside that function.
+    // Class Scope - When you write a class, the variables and functions inside it belong to the class scope.
 
     // Static scope - Special case: variables inside a function that keep their value between calls
     function counter(){
@@ -245,6 +246,11 @@
     echo counter();
     echo "<br>";
     echo counter();
+
+    // ================================= CONSTANTS ================================
+    define("PI", 3.14);
+    define("NAME", "Dan");
+
 ?>
 
 
