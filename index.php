@@ -148,6 +148,21 @@
 
     $b = 1;
     echo --$b;
+
+    echo "<br>";
+
+    // Using else if
+    $bool = true;
+    $a = 1;
+    $b = 4;
+
+    if( $a < $b && !$bool ){
+        echo "First condition is true";
+    } else if( $a < $b && $bool){
+        echo "Second condition is true";
+    } else {
+        echo "None of the conditions are true";
+    }
 ?>
 
 
