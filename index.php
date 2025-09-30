@@ -19,8 +19,33 @@
     $float = 2.8985;
     $bool = false;
 
-    // Array type
-    $names =["Faith", "Asha", "Frida"];
+    // ARRAY type
+    $names =[
+        "Faith", 
+        "Asha", 
+        "Frida"
+    ];
+    
+    array_splice($names, 0, 2);
+    echo $names[0];
+    echo "<br>";
+    array_push($names, "Dan");
+    print_r($names);
+
+
+    $tasks = [
+        "Laundry" => "Daniel",
+        "Cooking" => "Emma",
+        "Cleaning" => "Clara"
+    ];
+
+    echo $tasks["Laundry"];
+    echo "<br>";
+    print_r($tasks);
+    echo "<br>";
+    echo count($tasks);
+    echo "<br>";
+
 
     // Object types
 
