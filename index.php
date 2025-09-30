@@ -151,6 +151,18 @@
 
     echo "<br>";
 
+    // match
+    $a = 2;
+    $result = match ($a) {
+        1, 0, 3 => "Variable is equal to one",
+        2 => "Variable is equal to two",
+        default => "None were a match",
+    };
+
+    echo $result;
+
+    echo "<br>";
+
     // switch
     $a = 3;
     
