@@ -22,11 +22,11 @@
     </form>
 
     <?php 
-        if($_SERVER["REQUEST_METHOD"] = "POST"){
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             // grab data from inputs
-            $firstnumber = filter_input(INPUT_POST, "num01", FILTER_SANITIZE_NUMBER_FOAT);
-            $secondnumber = filter_input (INPUT_POST, "num02", FILTER_SANITIZE_NUMBER_FOAT);
+            $firstnumber = filter_input(INPUT_POST, "num01", FILTER_SANITIZE_NUMBER_FLOAT);
+            $secondnumber = filter_input (INPUT_POST, "num02", FILTER_SANITIZE_NUMBER_FLOAT);
         }
     ?>
 
