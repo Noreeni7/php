@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
@@ -283,6 +285,21 @@
     }
 
 ?>
+
+    <form action="includes/formhandle.inc.php" method="post" class="p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
+        <div class="mb-3">
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div class="mb-4">
+            <input type="password" name="pwd" placeholder="Password">
+        </div>
+        <div class="mb-4">
+            <input type="email" name="email" placeholder="E-mail">
+        </div>
+        <div class="mb-4">
+            <button class="btn btn-warning">Signup</button>
+        </div>
+    </form>
 
 
 
