@@ -1,7 +1,7 @@
 <?php
 $dsn = "mysql:host=localhost;dbname=mydatabase";
 $dbusername = "root";
-$dbpassword = "";
+$dbpassword = "Sbing254";
 
 // Database connection with error handling
 try {
