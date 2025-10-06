@@ -3,6 +3,7 @@ $dsn = "mysql:host=localhost;dbname=mydatabase";
 $dbusername = "root";
 $dbpassword = "";
 
+// Database connection with error handling
 try {
     $pdo = new PDO($dsn, $dbusername, $dbpassword);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
