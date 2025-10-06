@@ -286,7 +286,7 @@
 
 ?>
 
-    <form action="includes/formhandle.inc.php" method="post" class="p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
+    <form action="includes/formhandle.inc.php" method="post" class="container p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
         <div class="mb-3">
             <input type="text" name="username" placeholder="Username">
         </div>
