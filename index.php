@@ -311,9 +311,15 @@
         <h3>Post comment</h3>
     </div> 
 
-    <form action="includes/formhandle.inc.php" method="post" class="container p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
+    <form action="includes/comments.inc.php" method="post" class="container p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
         <div class="mb-3">
             <input type="text" name="username" placeholder="Username">
+        </div>
+        <div class="mb-4">
+            <input type="password" name="pwd" placeholder="Password">
+        </div>
+        <div class="mb-4">
+            <input type="email" name="email" placeholder="E-mail">
         </div>
         <div class="mb-4">
             <textarea name="comment_text" placeholder="Write your comment..."></textarea>
