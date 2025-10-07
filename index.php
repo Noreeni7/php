@@ -286,6 +286,27 @@
 
 ?>
 
+    <!-- Sign up -->
+    <div class="text-center">
+        <h3>Create account</h3>
+    </div> 
+
+    <form action="includes/formhandle.inc.php" method="post" class="container p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
+        <div class="mb-3">
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div class="mb-4">
+            <input type="password" name="pwd" placeholder="Password">
+        </div>
+        <div class="mb-4">
+            <input type="email" name="email" placeholder="E-mail">
+        </div>
+        <div class="mb-4">
+            <button class="btn btn-warning">Sign Up</button>
+        </div>
+    </form>
+
+    <!-- Change account -->
     <div class="text-center">
         <h3>Change account</h3>
     </div> 
@@ -305,6 +326,7 @@
         </div>
     </form>
 
+    <!-- Delete account  -->
     <div class="text-center">
         <h3>Delete account</h3>
     </div>
@@ -320,6 +342,21 @@
             <button class="btn btn-warning">Delete</button>
         </div>
     </form>
+
+    <!-- Search form -->
+    <div class="text-center">
+        <h3>Search account</h3>
+    </div>
+
+    <form action="search.php" method="post" class="container p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
+        <div class="mb-3">
+            <input id="search" type="text" name="usersearch" placeholder="Search...">
+        </div>
+        <div class="mb-4">
+            <button class="btn btn-warning">Search</button>
+        </div>
+    </form>
+
 
 
 </body>
