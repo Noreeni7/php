@@ -50,9 +50,9 @@
     else{
         foreach($results as $row){
             echo "<div>";
-            echo "<h4>" . $row["username"] . "</h4>";
-            echo "<p>" . $row["comment_text"] . "</p>";
-            echo "<p>" . $row["created_at"] . "</p>";
+            echo "<h4>" . htmlspecialchars($row["username"]) . "</h4>";
+            echo "<p>" . htmlspecialchars($row["comment_text"]) . "</p>";
+            echo "<p>" . htmlspecialchars($row["created_at"]) . "</p>";
             echo "</div>";
         }
     }

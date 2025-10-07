@@ -306,6 +306,23 @@
         </div>
     </form>
 
+    <!-- Post comment -->
+     <div class="text-center">
+        <h3>Post comment</h3>
+    </div> 
+
+    <form action="includes/formhandle.inc.php" method="post" class="container p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
+        <div class="mb-3">
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div class="mb-4">
+            <textarea name="comment_text" placeholder="Write your comment..."></textarea>
+        </div>
+        <div class="mb-4">
+            <button class="btn btn-warning">Post comment</button>
+        </div>
+    </form>
+
     <!-- Change account -->
     <div class="text-center">
         <h3>Change account</h3>
