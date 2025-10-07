@@ -286,7 +286,11 @@
 
 ?>
 
-    <form action="includes/formhandle.inc.php" method="post" class="container p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
+    <div class="text-center">
+        <h3>Change account</h3>
+    </div> 
+
+    <form action="includes/userupdate.inc.php" method="post" class="container p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
         <div class="mb-3">
             <input type="text" name="username" placeholder="Username">
         </div>
@@ -297,10 +301,25 @@
             <input type="email" name="email" placeholder="E-mail">
         </div>
         <div class="mb-4">
-            <button class="btn btn-warning">Signup</button>
+            <button class="btn btn-warning">Update</button>
         </div>
     </form>
 
+    <div class="text-center">
+        <h3>Delete account</h3>
+    </div>
+
+    <form action="includes/userdelete.inc.php" method="post" class="container p-4 border rounded shadow-sm bg-dark" style="max-width: 400px; margin: 50px auto;">
+        <div class="mb-3">
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div class="mb-4">
+            <input type="password" name="pwd" placeholder="Password">
+        </div>
+        <div class="mb-4">
+            <button class="btn btn-warning">Delete</button>
+        </div>
+    </form>
 
 
 </body>
