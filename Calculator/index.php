@@ -1,3 +1,6 @@
+<!-- ============ SIMPLE PHP CALCULATOR THAT HANDLES BASIC ARITHMETIC OPERATIONS (+, −, ×, ÷) =============== -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

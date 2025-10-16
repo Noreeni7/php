@@ -1,15 +1,5 @@
-
- <!-- * comments.inc.php
- * 
- * This file processes comment form submissions sent via POST.
- * It inserts the user's name and comment text into the 'comments' table
- * using a prepared statement to prevent SQL injection.
- * 
- * If accessed directly (not via POST), it redirects back to the index page.
-  -->
-
-
 <?php
+// =============================== HANDLES COMMENT SUBMISSION AND DATABASE INSERTION LOGIC ===========================
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

@@ -1,11 +1,5 @@
- <!-- * This file handles user searches for comments by username.
- * It retrieves all comments from the database that match the searched username
- * and displays them on the page.
- * 
- * If accessed directly (not via POST), it redirects to the index page. -->
-
-
 <?php
+// ================================ HANDLES USER COMMENT SEARCH AND DISPLAYS RESULTS ============================
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $userSearch = $_POST["usersearch"];
