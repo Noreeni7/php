@@ -1,3 +1,10 @@
+
+ <!-- * dbh.php
+ * 
+ * This file establishes a connection to the MySQL database using PDO.
+ * It includes error handling to display a message if the connection fails. -->
+
+
 <?php
 $dsn = "mysql:host=localhost;dbname=mydatabase";
 $dbusername = "root";

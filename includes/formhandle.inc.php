@@ -1,3 +1,10 @@
+ <!-- * This file handles user registration by processing form data sent via POST.
+ * It hashes the user's password for security and inserts the user’s details
+ * (username, hashed password, and email) into the 'users' table.
+ * 
+ * If accessed directly (not via POST), it redirects back to the home page. -->
+
+
 <?php
 
 // Check if form was sibmitted using post method
